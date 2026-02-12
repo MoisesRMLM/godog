@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://ccdpbfcvlao47" path="res://TileSet/forest.tres" id="1_wijl4"]
 [ext_resource type="PackedScene" uid="uid://cti67b57o2o2e" path="res://Scenes/player.tscn" id="2_e0an3"]
 [ext_resource type="PackedScene" uid="uid://b7lnhwuwx2qi7" path="res://Scenes/bones.tscn" id="3_p3ir5"]
+[ext_resource type="PackedScene" uid="uid://ci015fcpd0p6m" path="res://Scenes/spikes.tscn" id="4_myvm1"]
 
 [node name="Node2D" type="Node2D" unique_id=737151001]
 
@@ -15,19 +16,28 @@ tile_set = ExtResource("1_wijl4")
 position = Vector2(165, 416)
 
 [node name="Bones" parent="." unique_id=2093169596 instance=ExtResource("3_p3ir5")]
-position = Vector2(413, 328)
+position = Vector2(355, 364)
 
 [node name="Bones2" parent="." unique_id=2081118068 instance=ExtResource("3_p3ir5")]
-position = Vector2(486, 329)
+position = Vector2(402, 364)
 
 [node name="Bones3" parent="." unique_id=306310847 instance=ExtResource("3_p3ir5")]
-position = Vector2(558, 329)
+position = Vector2(450, 364)
 
 [node name="Bones4" parent="." unique_id=1642846009 instance=ExtResource("3_p3ir5")]
-position = Vector2(628, 327)
+position = Vector2(499, 364)
 
 [node name="Bones5" parent="." unique_id=1528163174 instance=ExtResource("3_p3ir5")]
-position = Vector2(698, 328)
+position = Vector2(547, 363)
 
 [node name="Bones6" parent="." unique_id=1425031891 instance=ExtResource("3_p3ir5")]
-position = Vector2(344, 327)
+position = Vector2(306, 365)
+
+[node name="Spikes" parent="." unique_id=555826953 instance=ExtResource("4_myvm1")]
+position = Vector2(308, 460)
+
+[node name="Spikes2" parent="." unique_id=1624858836 instance=ExtResource("4_myvm1")]
+position = Vector2(346, 460)
+
+[node name="Spikes3" parent="." unique_id=1805831499 instance=ExtResource("4_myvm1")]
+position = Vector2(384, 460)

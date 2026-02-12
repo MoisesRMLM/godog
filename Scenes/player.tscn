@@ -14,9 +14,17 @@ animation = NodePath("AnimatedSprite2D")
 checkpoint_scene = ExtResource("2_6t5aa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=537606918]
+unique_name_in_owner = true
 sprite_frames = ExtResource("1_v0iea")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853220777]
 position = Vector2(1.5, 14)
 shape = SubResource("RectangleShape2D_v0iea")
+
+[node name="ImmuneTimer" type="Timer" parent="." unique_id=1380857125]
+unique_name_in_owner = true
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="ImmuneTimer" to="." method="_on_immune_timer_timeout"]

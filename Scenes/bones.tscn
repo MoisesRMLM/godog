@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cnqwj4llusuw7" path="res://Assets/items/Bone20.4.png" id="3_f8vgm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xmwpp"]
-radius = 30.066593
+radius = 20.09975
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f8vgm"]
 atlas = ExtResource("1_ihqdg")
@@ -119,7 +119,7 @@ shape = SubResource("CircleShape2D_xmwpp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1170300366]
 unique_name_in_owner = true
-scale = Vector2(5.1428576, 5.1428585)
+scale = Vector2(3.4285715, 3.4285722)
 sprite_frames = SubResource("SpriteFrames_142pa")
 animation = &"blue"
 
