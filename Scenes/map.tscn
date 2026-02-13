@@ -1,6 +1,7 @@
-[gd_scene format=4 uid="uid://d2hbew2xjmkik"]
+[gd_scene format=4 uid="uid://b1e68qr7vyk5o"]
 
 [ext_resource type="Texture2D" uid="uid://kr2a377deckx" path="res://Assets/map/back/background_layer_1.png" id="1_e0an3"]
+[ext_resource type="PackedScene" uid="uid://cgqn720c4vu1g" path="res://Scenes/pause_menu.tscn" id="1_myvm1"]
 [ext_resource type="TileSet" uid="uid://ccdpbfcvlao47" path="res://TileSet/forest.tres" id="2_p5pve"]
 [ext_resource type="Texture2D" uid="uid://cavmf0jmwe20u" path="res://Assets/map/jungle tileset.png" id="3_urblq"]
 
@@ -349,6 +350,8 @@ texture = ExtResource("3_urblq")
 sources/0 = SubResource("TileSetAtlasSource_iw27f")
 
 [node name="map" type="Node2D" unique_id=2079401206]
+
+[node name="pause" parent="." unique_id=759421947 instance=ExtResource("1_myvm1")]
 
 [node name="background" type="TextureRect" parent="." unique_id=144149333]
 modulate = Color(0.5741211, 0.5741211, 0.5741211, 1)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bqhhimmnih5" path="res://Scripts/canvas_layer.gd" id="1_5oaki"]
 [ext_resource type="Texture2D" uid="uid://50qnes4desmu" path="res://Photos/flag.png" id="2_q85f0"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=491609004]
+[node name="UI_Checkpoint" type="CanvasLayer" unique_id=491609004]
 script = ExtResource("1_5oaki")
 
 [node name="checkpoint_label" type="Label" parent="." unique_id=1560553916]
