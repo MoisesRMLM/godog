@@ -6,6 +6,8 @@
 [ext_resource type="FontFile" uid="uid://b7tgwjxq6408l" path="res://PlaywriteNZBasic-Regular.ttf" id="3_wwsa2"]
 [ext_resource type="StyleBox" uid="uid://cjj2ltfb7d7tm" path="res://buttonColorH.tres" id="4_158mb"]
 [ext_resource type="Texture2D" uid="uid://uea3qbq6lr5x" path="res://Photos/lulugamestudio_logo.png" id="6_jsrd8"]
+[ext_resource type="Script" uid="uid://lspvdquqccg1" path="res://Scenes/play.gd" id="6_q3rjx"]
+[ext_resource type="PackedScene" uid="uid://rh4d5a5yns0s" path="res://Scenes/level.tscn" id="7_6swd7"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_wwsa2"]
 
@@ -67,6 +69,8 @@ theme_override_styles/normal = ExtResource("2_cayip")
 theme_override_styles/pressed = ExtResource("4_158mb")
 theme_override_styles/hover = ExtResource("4_158mb")
 text = "PLAY"
+script = ExtResource("6_q3rjx")
+level = ExtResource("7_6swd7")
 
 [node name="Options" type="Button" parent="VBoxContainer" unique_id=1306867063]
 layout_mode = 2
