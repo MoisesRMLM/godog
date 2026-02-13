@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://cgqn720c4vu1g"]
+
+[ext_resource type="StyleBox" uid="uid://y0l0nka4y4gl" path="res://button.tres" id="1_emv3i"]
+[ext_resource type="Script" uid="uid://sgftihdtxqur" path="res://Scripts/pause.gd" id="1_k0w1u"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=759421947]
+
+[node name="Pause" type="Node" parent="." unique_id=49155478]
+script = ExtResource("1_k0w1u")
+
+[node name="PausePanel" type="Panel" parent="Pause" unique_id=295408736]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Pause/PausePanel" unique_id=1917488194]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.5
+offset_top = -143.5
+offset_right = 174.5
+offset_bottom = -74.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "GAME PAUSED"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause/PausePanel" unique_id=815861277]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.5
+offset_top = -14.5
+offset_right = 150.5
+offset_bottom = 148.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Resume" type="Button" parent="Pause/PausePanel/VBoxContainer" unique_id=1011991954]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("1_emv3i")
+theme_override_styles/pressed = ExtResource("1_emv3i")
+theme_override_styles/hover = ExtResource("1_emv3i")
+text = "RESUME"
+
+[node name="main menu MENU" type="Button" parent="Pause/PausePanel/VBoxContainer" unique_id=1600582208]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("1_emv3i")
+theme_override_styles/pressed = ExtResource("1_emv3i")
+theme_override_styles/hover = ExtResource("1_emv3i")
+text = "MAIN MENU"
+
+[connection signal="pressed" from="Pause/PausePanel/VBoxContainer/Resume" to="Pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="Pause/PausePanel/VBoxContainer/main menu MENU" to="Pause" method="_on_main_menu_menu_pressed"]
