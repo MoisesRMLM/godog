@@ -10,43 +10,58 @@
 [node name="map" parent="." unique_id=2079401206 instance=ExtResource("1_6phgx")]
 
 [node name="CharacterBody2D" parent="map" unique_id=1069223489 instance=ExtResource("2_81xng")]
-position = Vector2(52, 586)
+position = Vector2(57, 591)
 
 [node name="Bones" parent="map" unique_id=2093169596 instance=ExtResource("3_wqkje")]
-position = Vector2(1081, 40)
+position = Vector2(1091, 38)
 
 [node name="Bones3" parent="map" unique_id=1139689659 instance=ExtResource("3_wqkje")]
-position = Vector2(507, 41)
+position = Vector2(510, 43)
 
 [node name="Bones4" parent="map" unique_id=1833364350 instance=ExtResource("3_wqkje")]
-position = Vector2(127, 277)
+position = Vector2(128, 256)
 
 [node name="Bones5" parent="map" unique_id=451471705 instance=ExtResource("3_wqkje")]
-position = Vector2(346, 437)
+position = Vector2(370, 447)
 
 [node name="Bones6" parent="map" unique_id=1716093949 instance=ExtResource("3_wqkje")]
-position = Vector2(1110, 432)
+position = Vector2(1096, 424)
 
 [node name="Bones7" parent="map" unique_id=503408481 instance=ExtResource("3_wqkje")]
-position = Vector2(136, 435)
+position = Vector2(136, 417)
 
 [node name="Bones8" parent="map" unique_id=1836576905 instance=ExtResource("3_wqkje")]
-position = Vector2(832, 103)
+position = Vector2(831, 89)
 
 [node name="Bones2" parent="map" unique_id=1189649002 instance=ExtResource("3_wqkje")]
-position = Vector2(1096, 596)
+position = Vector2(1090, 548)
 
 [node name="Spikes" parent="map" unique_id=555826953 instance=ExtResource("4_81xng")]
-position = Vector2(745, 605)
+position = Vector2(843, 608)
 
 [node name="Spikes2" parent="map" unique_id=1921868313 instance=ExtResource("4_81xng")]
-position = Vector2(930, 605)
+position = Vector2(962, 607)
 
 [node name="Spikes3" parent="map" unique_id=1710398518 instance=ExtResource("4_81xng")]
-position = Vector2(640, 203)
+position = Vector2(640, 208)
 
 [node name="Spikes5" parent="map" unique_id=508236785 instance=ExtResource("4_81xng")]
-position = Vector2(268, 442)
+position = Vector2(255, 448)
 
 [node name="Spikes4" parent="map" unique_id=1716647565 instance=ExtResource("4_81xng")]
-position = Vector2(1014, 443)
+position = Vector2(1034, 447)
+
+[node name="Spikes6" parent="map" unique_id=1853103541 instance=ExtResource("4_81xng")]
+position = Vector2(672, 192)
+
+[node name="Spikes7" parent="map" unique_id=82403035 instance=ExtResource("4_81xng")]
+position = Vector2(608, 192)
+
+[node name="Spikes8" parent="map" unique_id=1357143871 instance=ExtResource("4_81xng")]
+position = Vector2(320, 81)
+
+[node name="Spikes9" parent="map" unique_id=724406791 instance=ExtResource("4_81xng")]
+position = Vector2(1092, 608)
+
+[node name="Spikes10" parent="map" unique_id=924563947 instance=ExtResource("4_81xng")]
+position = Vector2(232, 608)
