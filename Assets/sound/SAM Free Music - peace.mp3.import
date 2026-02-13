@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://x4nh73bv2712"
+path="res://.godot/imported/SAM Free Music - peace.mp3-68a32c0efd80791bb51d576af61ea31e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sound/SAM Free Music - peace.mp3"
+dest_files=["res://.godot/imported/SAM Free Music - peace.mp3-68a32c0efd80791bb51d576af61ea31e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
