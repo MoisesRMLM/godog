@@ -14,6 +14,14 @@ config/name="godog"
 run/main_scene="uid://bsdpbqn52g5ng"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[audio]
+
+buses/default_bus_layout="uid://dn3ho3cl174g"
+
+[autoload]
+
+BgMusic="*uid://c0t646xg3eupi"
+
 [global_group]
 
 player=""

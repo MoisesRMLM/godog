@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c0t646xg3eupi"]
+
+[ext_resource type="AudioStream" uid="uid://x4nh73bv2712" path="res://Assets/sound/SAM Free Music - peace.mp3" id="1_wrh0v"]
+
+[node name="BgMusic" type="AudioStreamPlayer" unique_id=910762475]
+stream = ExtResource("1_wrh0v")
+autoplay = true
+bus = &"Music"

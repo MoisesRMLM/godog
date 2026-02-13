@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://rh4d5a5yns0s"]
 
-[ext_resource type="PackedScene" uid="uid://d2hbew2xjmkik" path="res://Scenes/map.tscn" id="1_6phgx"]
+[ext_resource type="PackedScene" uid="uid://b1e68qr7vyk5o" path="res://Scenes/map.tscn" id="1_6phgx"]
 [ext_resource type="PackedScene" uid="uid://cti67b57o2o2e" path="res://Scenes/player.tscn" id="2_81xng"]
 [ext_resource type="PackedScene" uid="uid://b7lnhwuwx2qi7" path="res://Scenes/bones.tscn" id="3_wqkje"]
 [ext_resource type="PackedScene" uid="uid://ci015fcpd0p6m" path="res://Scenes/spikes.tscn" id="4_81xng"]
@@ -10,7 +10,7 @@
 [node name="map" parent="." unique_id=2079401206 instance=ExtResource("1_6phgx")]
 
 [node name="CharacterBody2D" parent="map" unique_id=1069223489 instance=ExtResource("2_81xng")]
-position = Vector2(57, 591)
+position = Vector2(59.000004, 587)
 
 [node name="Bones" parent="map" unique_id=2093169596 instance=ExtResource("3_wqkje")]
 position = Vector2(1091, 38)
