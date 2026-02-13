@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dlvvl3jjug526"]
+
+[ext_resource type="PackedScene" uid="uid://swy6ifs7delp" path="res://MAP/map.tscn" id="1_7asp6"]
+[ext_resource type="PackedScene" uid="uid://beghvu7ug4xyw" path="res://CHARACTER/CHARACTER.tscn" id="2_j5qum"]
+
+[node name="NIVEL1" type="Node2D" unique_id=1686562384]
+
+[node name="MAPA" parent="." unique_id=990678930 instance=ExtResource("1_7asp6")]
+
+[node name="PERSONAJE" parent="." unique_id=1341447277 instance=ExtResource("2_j5qum")]
+position = Vector2(159, 93)

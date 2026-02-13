@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://beghvu7ug4xyw"]
+
+[ext_resource type="SpriteFrames" uid="uid://cyonb2s5rke4y" path="res://CHARACTER/ANIMATEDSPRITE2D/new_sprite_frames.tres" id="1_evlf1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecdqa"]
+size = Vector2(34, 27)
+
+[node name="CHARACTER" type="CharacterBody2D" unique_id=1341447277]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2021602603]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_ecdqa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=980260637]
+scale = Vector2(0.2421875, 0.2265625)
+sprite_frames = ExtResource("1_evlf1")
+animation = &"IDLE"
