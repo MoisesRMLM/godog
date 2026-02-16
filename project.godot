@@ -13,6 +13,8 @@ config_version=5
 config/name="godog"
 run/main_scene="uid://bsdpbqn52g5ng"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/image="uid://uea3qbq6lr5x"
+config/icon="uid://uea3qbq6lr5x"
 
 [audio]
 
@@ -21,6 +23,11 @@ buses/default_bus_layout="uid://dn3ho3cl174g"
 [autoload]
 
 BgMusic="*uid://c0t646xg3eupi"
+
+[display]
+
+window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [global_group]
 
