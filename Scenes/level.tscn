@@ -1,67 +1,80 @@
 [gd_scene format=3 uid="uid://rh4d5a5yns0s"]
 
 [ext_resource type="PackedScene" uid="uid://b1e68qr7vyk5o" path="res://Scenes/map.tscn" id="1_6phgx"]
+[ext_resource type="Script" uid="uid://bslfdyscmal48" path="res://Scripts/level.gd" id="1_wqkje"]
 [ext_resource type="PackedScene" uid="uid://cti67b57o2o2e" path="res://Scenes/player.tscn" id="2_81xng"]
 [ext_resource type="PackedScene" uid="uid://b7lnhwuwx2qi7" path="res://Scenes/bones.tscn" id="3_wqkje"]
 [ext_resource type="PackedScene" uid="uid://ci015fcpd0p6m" path="res://Scenes/spikes.tscn" id="4_81xng"]
+[ext_resource type="PackedScene" uid="uid://bt704ttf2ep53" path="res://Scenes/interfaces/win_interface.tscn" id="6_0f350"]
 
-[node name="level" type="Node2D" unique_id=425330220]
+[node name="level" type="Node2D" unique_id=425330220 node_paths=PackedStringArray("win_interface", "all_bones")]
+script = ExtResource("1_wqkje")
+win_interface = NodePath("win_interface")
+all_bones = NodePath("Bones")
+next_level = "uid://dlo8cbyu8lrqm"
 
 [node name="map" parent="." unique_id=2079401206 instance=ExtResource("1_6phgx")]
 
 [node name="CharacterBody2D2" parent="map" unique_id=1069223489 instance=ExtResource("2_81xng")]
 position = Vector2(59.000004, 587)
 
-[node name="Bones" parent="map" unique_id=2093169596 instance=ExtResource("3_wqkje")]
-position = Vector2(1091, 38)
+[node name="Spikes" type="Node2D" parent="map" unique_id=1897599937]
 
-[node name="Bones3" parent="map" unique_id=1139689659 instance=ExtResource("3_wqkje")]
-position = Vector2(510, 43)
-
-[node name="Bones4" parent="map" unique_id=1833364350 instance=ExtResource("3_wqkje")]
-position = Vector2(128, 256)
-
-[node name="Bones5" parent="map" unique_id=451471705 instance=ExtResource("3_wqkje")]
-position = Vector2(370, 447)
-
-[node name="Bones6" parent="map" unique_id=1716093949 instance=ExtResource("3_wqkje")]
-position = Vector2(1096, 424)
-
-[node name="Bones7" parent="map" unique_id=503408481 instance=ExtResource("3_wqkje")]
-position = Vector2(136, 417)
-
-[node name="Bones8" parent="map" unique_id=1836576905 instance=ExtResource("3_wqkje")]
-position = Vector2(831, 89)
-
-[node name="Bones2" parent="map" unique_id=1189649002 instance=ExtResource("3_wqkje")]
-position = Vector2(1090, 548)
-
-[node name="Spikes" parent="map" unique_id=555826953 instance=ExtResource("4_81xng")]
+[node name="Spikes" parent="map/Spikes" unique_id=555826953 instance=ExtResource("4_81xng")]
 position = Vector2(843, 608)
 
-[node name="Spikes2" parent="map" unique_id=1921868313 instance=ExtResource("4_81xng")]
+[node name="Spikes2" parent="map/Spikes" unique_id=1921868313 instance=ExtResource("4_81xng")]
 position = Vector2(962, 607)
 
-[node name="Spikes3" parent="map" unique_id=1710398518 instance=ExtResource("4_81xng")]
+[node name="Spikes3" parent="map/Spikes" unique_id=1710398518 instance=ExtResource("4_81xng")]
 position = Vector2(640, 208)
 
-[node name="Spikes5" parent="map" unique_id=508236785 instance=ExtResource("4_81xng")]
+[node name="Spikes5" parent="map/Spikes" unique_id=508236785 instance=ExtResource("4_81xng")]
 position = Vector2(255, 448)
 
-[node name="Spikes4" parent="map" unique_id=1716647565 instance=ExtResource("4_81xng")]
+[node name="Spikes4" parent="map/Spikes" unique_id=1716647565 instance=ExtResource("4_81xng")]
 position = Vector2(1034, 447)
 
-[node name="Spikes6" parent="map" unique_id=1853103541 instance=ExtResource("4_81xng")]
+[node name="Spikes6" parent="map/Spikes" unique_id=1853103541 instance=ExtResource("4_81xng")]
 position = Vector2(672, 192)
 
-[node name="Spikes7" parent="map" unique_id=82403035 instance=ExtResource("4_81xng")]
+[node name="Spikes7" parent="map/Spikes" unique_id=82403035 instance=ExtResource("4_81xng")]
 position = Vector2(608, 192)
 
-[node name="Spikes8" parent="map" unique_id=1357143871 instance=ExtResource("4_81xng")]
+[node name="Spikes8" parent="map/Spikes" unique_id=1357143871 instance=ExtResource("4_81xng")]
 position = Vector2(320, 81)
 
-[node name="Spikes9" parent="map" unique_id=724406791 instance=ExtResource("4_81xng")]
+[node name="Spikes9" parent="map/Spikes" unique_id=724406791 instance=ExtResource("4_81xng")]
 position = Vector2(1092, 608)
 
-[node name="Spikes10" parent="map" unique_id=924563947 instance=ExtResource("4_81xng")]
+[node name="Spikes10" parent="map/Spikes" unique_id=924563947 instance=ExtResource("4_81xng")]
 position = Vector2(232, 608)
+
+[node name="Bones" type="Node2D" parent="." unique_id=1739566872]
+
+[node name="Bones" parent="Bones" unique_id=2093169596 instance=ExtResource("3_wqkje")]
+position = Vector2(1091, 38)
+
+[node name="Bones3" parent="Bones" unique_id=1139689659 instance=ExtResource("3_wqkje")]
+position = Vector2(510, 43)
+
+[node name="Bones4" parent="Bones" unique_id=1833364350 instance=ExtResource("3_wqkje")]
+position = Vector2(128, 256)
+
+[node name="Bones5" parent="Bones" unique_id=451471705 instance=ExtResource("3_wqkje")]
+position = Vector2(370, 447)
+
+[node name="Bones6" parent="Bones" unique_id=1716093949 instance=ExtResource("3_wqkje")]
+position = Vector2(1096, 424)
+
+[node name="Bones7" parent="Bones" unique_id=503408481 instance=ExtResource("3_wqkje")]
+position = Vector2(136, 417)
+
+[node name="Bones8" parent="Bones" unique_id=1836576905 instance=ExtResource("3_wqkje")]
+position = Vector2(831, 89)
+
+[node name="Bones2" parent="Bones" unique_id=1189649002 instance=ExtResource("3_wqkje")]
+position = Vector2(1090, 548)
+
+[node name="win_interface" parent="." unique_id=1778875431 instance=ExtResource("6_0f350")]
+visible = false
